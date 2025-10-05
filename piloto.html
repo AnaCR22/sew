@@ -37,8 +37,21 @@
         destacando por su consistencia y habilidades técnicas. Su objetivo es seguir ascendiendo en la clasificación general y luchar por más victorias en las 
         próximas carreras.</p>
 
-    <img src="piloto.jpg" alt="Foto del piloto" />
-    
+    <picture>
+        <!-- Para móviles: max-width 465px -->
+        <source media="(max-width: 465px)" srcset="piloto-mobile.jpg">
+          
+        <!-- Para tablets: max-width 799px -->
+        <source media="(max-width: 799px)" srcset="piloto-tablet.jpg">
+          
+        <!-- Para pantallas grandes (monitores): min-width 800px -->
+        <source media="(min-width: 800px)" srcset="piloto-desktop.jpg">
+          
+        <!-- Imagen por defecto si el navegador no soporta <picture> -->
+        <img src="piloto-desktop.jpg" alt="Foto del piloto">
+    </picture>
+          
+
     <!-- Lista de datos personales -->
     <ul>
         <li>Fecha de nacimiento: 23 de abril de 1996</li>
