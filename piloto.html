@@ -38,16 +38,16 @@
         próximas carreras.</p>
 
     <picture>
-        <!-- Para móviles: max-width 465px -->
-        <source media="(max-width: 465px)" srcset="piloto-mobile.jpg">
+        <!-- Para móviles -->
+        <source srcset="piloto-mobile.jpg" media="max-width:465px">
           
-        <!-- Para tablets: max-width 799px -->
-        <source media="(max-width: 799px)" srcset="piloto-tablet.jpg">
+        <!-- Para tablets -->
+        <source srcset="piloto-tablet.jpg" media="(max-width: 799px)">
           
-        <!-- Para pantallas grandes (monitores): min-width 800px -->
-        <source media="(min-width: 800px)" srcset="piloto-desktop.jpg">
+        <!-- Para monitor -->
+        <source srcset="piloto-desktop.jpg" media="(min-width: 800px)">
           
-        <!-- Imagen por defecto si el navegador no soporta <picture> -->
+        <!-- Imagen por defecto -->
         <img src="piloto-desktop.jpg" alt="Foto del piloto">
     </picture>
           
