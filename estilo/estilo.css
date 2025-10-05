@@ -1,4 +1,49 @@
 /*Datos personales: Ana Calleja Ramon UO300568*/
 /* Estilos generales del proyecto MotoGP-Desktop*/
+/*#071330 Azul oscuro
+#2B6488 Azul grisáceo
+#C3D6DB Azul claro
+#FFFFFF Blanco
+*/
 
+/* Selector de tipo (especificidad 0-0-0-1) */
+body{
+    background-color: #FFFFFF; 
+    color: #071330;
+    font-family: "Cambria", serif;
+}
 
+/* Selector de tipo: especificidad 0-0-0-1 */
+header{
+    background-color: #C3D6DB;
+    color: #071330;
+}
+
+/* Selector de tipo: especificidad 0-0-0-1 */
+h1{
+    color: #071330;
+}
+
+/* Selector de tipo: especificidad 0-0-0-1 */
+h2, h3, h4, h5, h6 {
+    color: #2B6488; 
+}
+
+/* Selector de tipo: especificidad 0-0-0-1 */
+nav {
+    background-color: #C3D6DB;
+    color: #071330;
+}
+
+/* Selector de tipo y pseudoclase: especificidad 0-0-1-1 */
+a:link,
+a:visited,
+a:active {
+    color: #071330; 
+}
+
+/* Selector de tipo y pseudoclase: especificidad 0-0-1-1 */
+a:hover {
+    color: #2B6488; 
+    text-decoration: underline; 
+}
