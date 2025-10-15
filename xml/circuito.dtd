@@ -1,0 +1,64 @@
+<!ELEMENT circuito (dimensiones, carrera, patrocinador, referencias, fotos, videos, puntoOrigen, tramos, vencedor, clasificacion)>
+<!ATTLIST circuito 
+  nombre CDATA #REQUIRED
+  localidad CDATA #REQUIRED
+  pais CDATA #REQUIRED
+>
+
+<!ELEMENT dimensiones (#PCDATA)>
+<!ATTLIST dimensiones 
+    longitud CDATA #REQUIRED
+    anchura CDATA #REQUIRED
+    unidad CDATA #REQUIRED
+>
+
+<!ELEMENT patrocinador (#PCDATA)>
+
+<!ELEMENT carrera EMPTY>
+<!ATTLIST carrera 
+  fecha CDATA #REQUIRED
+  horaInicio CDATA #REQUIRED
+  vueltas CDATA #REQUIRED
+>
+
+<!ELEMENT referencias (referencia, referencia, referencia, referencia*)>
+<!ELEMENT referencia EMPTY>
+<!ATTLIST referencia url CDATA #REQUIRED>
+
+<!ELEMENT fotos (foto | (foto, foto) | (foto, foto, foto) | (foto, foto, foto, foto) | (foto, foto, foto, foto, foto))>
+<!ELEMENT foto EMPTY>
+<!ATTLIST foto archivo CDATA #REQUIRED>
+
+<!ELEMENT videos (video | (video, video) | (video, video, video) | (video, video, video, video) | (video, video, video, video, video))>
+<!ELEMENT video EMPTY>
+<!ATTLIST video archivo CDATA #REQUIRED>
+
+<!ELEMENT punto EMPTY>
+<!ATTLIST punto 
+  longitud CDATA #REQUIRED
+  latitud CDATA #REQUIRED
+  altitud CDATA #REQUIRED
+>
+
+<!ELEMENT puntoOrigen (punto)>
+
+
+<!ELEMENT tramos (tramo+)>
+<!ELEMENT tramo (punto)>
+<!ATTLIST tramo 
+  distancia CDATA #REQUIRED
+  sector CDATA #REQUIRED
+>
+
+<!ELEMENT vencedor EMPTY>
+<!ATTLIST vencedor 
+  nombre CDATA #REQUIRED
+  tiempo CDATA #REQUIRED
+>
+
+<!ELEMENT clasificacion (clasificado, clasificado, clasificado)>
+<!ELEMENT clasificado EMPTY>
+<!ATTLIST clasificado 
+  nombre CDATA #REQUIRED
+  puntos CDATA #REQUIRED
+>

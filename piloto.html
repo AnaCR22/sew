@@ -10,100 +10,148 @@
     <meta name="keywords" content="MotoGP, piloto, carreras, motos" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="estilo/estilo.css">
+    <link rel="stylesheet" href="estilo/layout.css">
+    <link rel ="icon" href="multimedia/favicon.ico">
 </head>
 
 <body>
-    <!-- Datos con el contenidos que aparece en el navegador -->
-    <h1>MotoGP Desktop</h1>
+    <!-- Cabecera global -->
+    <header>
+        <h1><a href="index.html">MotoGP Desktop</a></h1>
+        <nav>
+            <a href="index.html" title="Página de inicio">Inicio</a> 
+            <a href="piloto.html" title="Información del piloto">Piloto</a> 
+            <a href="circuito.html" title="Información del circuito">Circuito</a> 
+            <a href="meteorologia.html" title="Datos meteorológicos">Meteorología</a> 
+            <a href="clasificaciones.html" title="Resultados y clasificaciones">Clasificaciones</a> 
+            <a href="juegos.html" title="Juegos de MotoGP">Juegos</a> 
+            <a href="ayuda.html" class="active" title="Información de ayuda del proyecto">Ayuda</a>
+        </nav>
+    </header>
 
-    <nav>
-        <a href="index.html" title="Página de inicio">Inicio</a> |
-        <a href="piloto.html" title="Información del piloto">Piloto</a> |
-        <a href="circuito.html" title="Información del circuito">Circuito</a> |
-        <a href="meteorologia.html" title="Datos meteorológicos">Meteorología</a> |
-        <a href="clasificaciones.html" title="Resultados y clasificaciones">Clasificaciones</a> |
-        <a href="juegos.html" title="Juegos de MotoGP">Juegos</a> |
-        <a href="ayuda.html" title="Información de ayuda del proyecto">Ayuda</a>
-    </nav>
+    <p>Estás en: <a href="index.html">Inicio</a> >> <strong>Piloto</strong></p>
 
-    <h2>Alex Márquez</h2>
-    <p>Alejandro Márquez Alentà, más conocido como Álex Márquez, es un piloto de motociclismo español que compite en la «categoría reina» de MotoGP™ con el 
-        equipo Gresini Racing, donde obtuvo su primera victoria en el Gran Premio de España en Jerez de la Frontera en abril de 2025.</p>
-    <p>Hermano menor de Marc Márquez, ha forjado su propio camino en MotoGP y se ha consolidado como un competidor constante y talentoso, logrando victorias 
-        y podios en su carrera profesional.
-        Previamente compitió con los equipos Repsol Honda en 2020 y LCR Honda en 2021 y 2022. Ha ganado dos títulos del Campeonato del Mundo de Motociclismo:
-        en Moto3™ en 2014 y en Moto2™ en 2019.</p>
-    <p>En la temporada 2025, Álex se ha consolidado como uno de los pilotos más prometedores del campeonato, 
-        destacando por su consistencia y habilidades técnicas. Su objetivo es seguir ascendiendo en la clasificación general y luchar por más victorias en las 
-        próximas carreras.</p>
+    <!-- Contenido principal de esta página -->
+    <main>
+        <!-- Sección de presentación -->
+        <section>
+            <h2>Alex Márquez</h2>
+            <p>Alejandro Márquez Alentà, más conocido como Álex Márquez, es un piloto de motociclismo español que compite en la «categoría reina» de MotoGP™ con el 
+                equipo Gresini Racing, donde obtuvo su primera victoria en el Gran Premio de España en Jerez de la Frontera en abril de 2025.</p>
+            <p>Hermano menor de Marc Márquez, ha forjado su propio camino en MotoGP y se ha consolidado como un competidor constante y talentoso, logrando victorias 
+                y podios en su carrera profesional.
+                Previamente compitió con los equipos Repsol Honda en 2020 y LCR Honda en 2021 y 2022. Ha ganado dos títulos del Campeonato del Mundo de Motociclismo:
+                en Moto3™ en 2014 y en Moto2™ en 2019.</p>
+            <p>En la temporada 2025, Álex se ha consolidado como uno de los pilotos más prometedores del campeonato, 
+                destacando por su consistencia y habilidades técnicas. Su objetivo es seguir ascendiendo en la clasificación general y luchar por más victorias en las 
+                próximas carreras.</p>
 
-    <img src="piloto.jpg" alt="Foto del piloto" />
+            <picture>
+                <source srcset="multimedia/piloto-mobile.jpg" media="(max-width: 465px)">
+                <source srcset="multimedia/piloto-tablet.jpg" media="(max-width: 799px)">
+                <source srcset="multimedia/piloto-desktop.jpg" media="(min-width: 800px)">
+                <img src="multimedia/piloto-desktop.jpg" alt="Foto del piloto">
+            </picture>
+        </section>
+
+        <!-- Sección datos personales -->
+        <section>
+            <h2>Datos personales</h2>
+            <ul>
+                <li>Fecha de nacimiento: 23 de abril de 1996</li>
+                <li>Lugar de nacimiento: Cervera, Lleida, España</li>
+                <li>Altura: 1,80 m</li>
+                <li>Peso: 65 kg</li>
+                <li>Moto: Ducati Desmosedici</li>
+                <li>Dorsal: 73</li>
+            </ul>
+        </section>
+
+        <!-- Sección video -->
+        <section>
+            <h2>Primera victoria</h2>
+            <p>Primera victoria de Álex Márquez en la «categoría reina» de MotoGP™:</p>
+            <video controls>
+                <source src="multimedia/video_piloto.webm" type="video/webm">
+                <source src="multimedia/video_piloto.mp4" type="video/mp4">
+                Tu navegador no puede reproducir el elemento video.
+            </video>
+        </section>
+
+        <!-- Sección equipos -->
+        <section>   
+            <h3>Equipos en los que ha competido:</h3>
+            <ol>
+                <li>Estrella Galicia 0,0 (Moto3)</li>
+                <li>EG 0,0 Marc VDS (Moto2)</li>
+                <li>Repsol Honda Team (MotoGP)</li>
+                <li>BK8 Gresini Racing MotoGP (MotoGP)</li>
+            </ol>
+        </section>
+
+        <!-- Sección resultados -->
+        <section>
+            <h2>Resultados en MotoGP 2024</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th id="th-puntos" scope="col">Puntos</th>
+                        <th id="th-posicion" scope="col">Posición</th>
+                        <th id="th-poles" scope="col">Poles</th>
+                        <th id="th-victorias" scope="col">Victorias</th>
+                        <th id="th-podios" scope="col">Podios</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td headers="th-puntos">173</td>
+                        <td headers="th-posicion">8º</td>
+                        <td headers="th-poles">0</td>
+                        <td headers="th-victorias">0</td>
+                        <td headers="th-podios">1</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
     
-    <!-- Lista de datos personales -->
-    <ul>
-        <li>Fecha de nacimiento: 23 de abril de 1996</li>
-        <li>Lugar de nacimiento: Cervera, Lleida, España</li>
-        <li>Altura: 1,80 m</li>
-        <li>Peso: 65 kg</li>
-        <li>Moto: Ducati Desmosedici</li>
-        <li>Dorsal: 73</li>
-    </ul>
+        <!-- Aside con información tangencial -->
+        <aside>
+            <h3>Enlaces externos sobre Álex Márquez</h3>
+            <ul>
+                <li><a href="https://www.motogp.com/en/riders/Alex+Marquez" target="_blank">Perfil de Álex Márquez en MotoGP.com</a></li>
+                <li><a href="https://es.wikipedia.org/wiki/%C3%81lex_M%C3%A1rquez" target="_blank">Álex Márquez en Wikipedia</a></li>
+            </ul>
+        </aside>
 
-    <!-- Lista de equipos -->
-    <h3>Equipos en los que ha competido:</h3>
-    <ol>
-        <li>Estrella Galicia 0,0 (Moto3)</li>
-        <li>EG 0,0 Marc VDS (Moto2)</li>
-        <li>Repsol Honda Team (MotoGP)</li>
-        <li>BK8 Gresini Racing MotoGP (MotoGP)</li>
-    </ol>
 
-    <!-- Tabla con los resultados de MotoGP en 2024 -->
-    <h3>Resultados de Álex Márquez en MotoGP 2024</h3>
-    <table>
-        <thead>
-            <tr>
-                <th>Puntos</th>
-                <th>Posición</th>
-                <th>Poles</th>
-                <th>Victorias</th>
-                <th>Podios</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>173</td>
-                <td>8º</td>
-                <td>0</td>
-                <td>0</td>
-                <td>1</td>
-            </tr>
-        </tbody>
-    </table>
+        <!-- Sección conceptos -->
+        <section>
+            <h2>Conceptos de MotoGP</h2>
 
-    <h3>Enlaces externos sobre Álex Márquez</h3>
-    <ul>
-        <li><a href="https://www.motogp.com/en/riders/Alex+Marquez" target="_blank">Perfil de Álex Márquez en MotoGP.com</a></li>
-        <li><a href="https://es.wikipedia.org/wiki/%C3%81lex_M%C3%A1rquez" target="_blank">Álex Márquez en Wikipedia</a></li>
-    </ul>
+            <p>Escucha una breve explicación sobre MotoGP:</p>
+            <audio controls>
+                <source src="multimedia/audio_pole.mp3" type="audio/mpeg">
+                <source src="multimedia/audio_pole.wav" type="audio/wav">
+                Tu navegador no puede reproducir el elemento audio.
+            </audio>
 
-    <!-- Lista de conceptos de MotoGP -->
-    <h2>Conceptos de MotoGP</h2>
-    <dl>
-        <dt>Chicane</dt>
-        <dd>Serie de curvas pronunciadas cuyo fin es reducir la velocidad de las motos.</dd>
-        
-        <dt>Pole</dt>
-        <dd>Posición de salida en la primera fila de la parrilla, obtenida por el piloto más rápido en la clasificación.</dd>
-        
-        <dt>Tacómetro</dt>
-        <dd>Instrumento que mide las revoluciones por minuto del motor de la moto.</dd>
+            <dl>
+                <dt>Chicane</dt>
+                <dd>Serie de curvas pronunciadas cuyo fin es reducir la velocidad de las motos.</dd>
+                
+                <dt>Pole</dt>
+                <dd>Posición de salida en la primera fila de la parrilla, obtenida por el piloto más rápido en la clasificación.</dd>
+                
+                <dt>Tacómetro</dt>
+                <dd>Instrumento que mide las revoluciones por minuto del motor de la moto.</dd>
 
-        <dt>Control de tracción</dt>
-        <dd>Sistema electrónico que evita que la rueda trasera derrape al aplicar demasiada potencia.</dd>
+                <dt>Control de tracción</dt>
+                <dd>Sistema electrónico que evita que la rueda trasera derrape al aplicar demasiada potencia.</dd>
 
-        <dt>Slipstream</dt>
-        <dd>Corriente de aire creada detrás de otra moto que permite ganar velocidad al seguirla de cerca.</dd>
-    </dl>
+                <dt>Slipstream</dt>
+                <dd>Corriente de aire creada detrás de otra moto que permite ganar velocidad al seguirla de cerca.</dd>
+            </dl>
+        </section>
+    </main>
 </body>
 </html>
