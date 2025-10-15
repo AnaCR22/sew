@@ -39,18 +39,24 @@ nav {
 
 
 nav a.active {
-    color: #D90429;       
+    color: #D90429;    
+    text-decoration-line: none;   
 }
 
 
-
 /* Especificidad 0-0-1-1 */
+a:link,
 a:visited {
     color: #071330; 
+    text-decoration-line: none;   
 }
 
 /* Especificidad 0-0-1-1 */
 a:hover {
     color: #2B6488; 
-    text-decoration: underline; 
+    text-decoration-line: none;   
+}
+
+header + p {
+    font-size: smaller;
 }

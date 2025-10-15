@@ -1,0 +1,77 @@
+/*Datos personales: Ana Calleja Ramon UO300568*/
+/* Estilos generales del proyecto MotoGP-Desktop*/
+/* Uso del módulo CSS-Flexible Box Layout (Flexbox) */
+/*#071330 Azul oscuro
+#2B6488 Azul grisáceo
+#C3D6DB Azul claro
+#FFFFFF Blanco
+*/
+
+/* Selector de tipo (especificidad 0-0-0-1)
+   Se aplica Flexbox al header para distribuir el título y el menú */
+header {
+    display: flex; /* activa flexbox */
+    justify-content: space-between; /* separa el h1 y el nav */
+    align-items: center; /* centra verticalmente los elementos */
+    padding: 5px 10px; /* margen interno para respiración visual */
+    flex-wrap: wrap; /* permite que el contenido se adapte en pantallas pequeñas */
+}
+
+/* Selector descendente de tipo (especificidad 0-0-0-2)
+   Se aplica Flexbox al nav para distribuir los enlaces */
+nav {
+    display: flex;
+    gap: 5px; /* espacio entre los enlaces */
+    flex-wrap: wrap; /* los enlaces se acomodan en varias líneas si hace falta */
+}
+
+/* Selector de tipo (especificidad 0-0-0-1)
+   Se asegura que los enlaces sean legibles y centrados dentro del nav */
+nav a {
+    text-decoration: none;
+    padding: 0px 5px;
+}
+
+/* ========================================================= */
+/* Adaptabilidad del proyecto MotoGP-Desktop (Ejercicio 6) */
+/* ========================================================= */
+
+/* Reglas para dispositivos móviles (320px a 799px)
+   Se redefinen las propiedades flexbox del header y nav */
+/* Propiedades redefinidas: display, flex-direction, justify-content, align-items */
+@media (min-width: 320px) and (max-width: 799px) {
+
+    /* Selector de tipo (especificidad 0-0-0-1)
+       Cambia la disposición del header a vertical */
+    header {
+        display: flex;
+        flex-direction: column; /* antes estaba en fila (row), ahora en columna */
+        align-items: center; /* centra los elementos en la columna */
+        justify-content: center; /* redefinido */
+    }
+
+    /* Selector de tipo (especificidad 0-0-0-1)
+       Cambia el comportamiento del nav para apilar los enlaces */
+    nav {
+        display: flex;
+        flex-direction: column; /* los enlaces se apilan */
+        align-items: center;
+        gap: 10px; /* espacio entre enlaces */
+    }
+
+    /* Selector de clase o tipo específico (especificidad 0-0-0-1)
+       Oculta las migas de navegación */
+    header + p  {
+        display: none; /* no se muestran en móviles */
+    }
+
+    /* Adaptabilidad multimedia */
+    video {
+        width: 100%;
+        height: auto;
+    }
+
+    audio {
+        width: 100%;
+    }
+}
