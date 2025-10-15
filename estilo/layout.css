@@ -45,7 +45,7 @@ nav a {
        Cambia la disposición del header a vertical */
     header {
         display: flex;
-         /* antes estaba en fila (row), ahora en columna */
+        flex-direction: column; /* antes estaba en fila (row), ahora en columna */
         align-items: center; /* centra los elementos en la columna */
         justify-content: center; /* redefinido */
     }
