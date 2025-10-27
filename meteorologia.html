@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="estilo/estilo.css">
     <link rel="stylesheet" href="estilo/layout.css">
     <link rel ="icon" href="multimedia/favicon.ico">
+    <script src="js/ciudad.js"></script>
 </head>
 
 <body>
@@ -33,6 +34,16 @@
     <p>Estás en: <a href="index.html">Inicio</a> >> <strong>Meteorología</strong></p>
 
     <h2>Meteorologia de MotoGP-Desktop</h2>
-    <p>En desarrollo</p>
+
+    <script>
+        // Usando la ciudadJerez ya declarado en ciudad.js
+        const h3 = document.createElement("h3");
+        h3.textContent = `${ciudadJerez.getNombre()} (${ciudadJerez.getPais()})`;
+        document.body.appendChild(h3);
+
+        document.body.insertAdjacentHTML('beforeend', ciudadJerez.getInfoSecundaria());
+
+        ciudadJerez.escribirCoordenadas();
+    </script>
 </body>
 </html>
