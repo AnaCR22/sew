@@ -1,0 +1,62 @@
+/* === layout-cards.css === */
+
+/* Estilo general del área principal */
+main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columnas iguales */
+  grid-template-rows: auto repeat(3, 1fr); /* 1 fila para el título + 3 filas de cartas */
+  gap: 20px; /* Espacio entre tarjetas */
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* El encabezado principal ocupa toda la primera fila */
+main > h2 {
+  grid-column: 1 / -1; /* Ocupa todas las columnas */
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+/* Cada tarjeta (article) */
+article {
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  background-color: #fafafa;
+  transition: transform 0.2s;
+}
+
+article:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+/* Imagen dentro de cada tarjeta */
+article img {
+  width: 100%;
+  height: auto;
+  max-width: 150px;
+  display: block;
+  margin: 0 auto;
+}
+
+
+@media (min-width: 320px) and (max-width: 799px) {
+
+    main {
+    grid-template-columns: repeat(2, 1fr);  /* 2 columnas */
+    grid-template-rows: auto repeat(6, 1fr); /* 6 filas de cartas */
+    gap: 15px; /* un poco menos de espacio en pantallas pequeñas */
+    }
+
+    main > h2 {
+        font-size: 1.5em; /* título ligeramente más pequeño */
+    }
+
+    article img {
+        max-width: 100px; /* reducir un poco las imágenes */
+    }
+}
