@@ -42,3 +42,9 @@ article h3 {
     align-items: center;
     margin: 0;
 }
+
+/* Regla para rotar las imágenes y que se vean correctamente cuando se giran las cartas */
+/* especificidad: 002 */
+article img {
+    transform: rotateY(180deg);
+}
