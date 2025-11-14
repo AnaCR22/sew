@@ -11,20 +11,17 @@ class Ciudad {
 
     rellenarDatos(poblacion, coordenadas) {
         this.poblacion = poblacion;
-        this.coordenadas = coordenadas; // {lat: número, lon: número}
+        this.coordenadas = coordenadas;
     }
 
-    // Método que devuelve el nombre de la ciudad en texto
     getNombre() {
         return this.nombre;
     }
 
-    // Método que devuelve el nombre del país
     getPais() {
         return this.pais;
     }
 
-    // Método que devuelve una lista HTML con el gentilicio y la población
     getInfoSecundaria() {
         return `
             <ul>
@@ -34,7 +31,6 @@ class Ciudad {
         `;
     }
 
-    // Método que escribe en el documento las coordenadas usando document.write()
     escribirCoordenadas() {
         const p = document.createElement("p");
         p.textContent = `Coordenadas: Latitud ${this.coordenadas.lat}, Longitud ${this.coordenadas.lon}`;
@@ -42,7 +38,6 @@ class Ciudad {
     }
 }
 
-// Ejemplo: Jerez de la Frontera (España)
 const ciudadJerez = new Ciudad(
     "Jerez de la Frontera",
     "España",
