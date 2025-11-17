@@ -36,12 +36,11 @@ class Memoria {
     }
 
     #barajarCartas() {
-        const tablero = document.querySelector("main");
-        const cartas = Array.from(tablero.querySelectorAll(".carta"));        
+        //const tablero = document.querySelector("main");
+        //const cartas = Array.from(tablero.querySelectorAll(".carta"));        
+        const tablero = document.body.children[2];
+        const cartas = Array.from(tablero.getElementsByTagName("article"));
 
-        for (const child of cartas.children) {
-            cartas.appendChild(child);
-        }
         for (let i = cartas.length - 1; i > 0; i--) {
             const j = Math.floor(Math.random() * (i + 1));
             [cartas[i], cartas[j]] = [cartas[j], cartas[i]];
@@ -70,7 +69,9 @@ class Memoria {
     }
 
     #comprobarJuego() {
-        const cartas = document.querySelectorAll(".carta");
+        //const cartas = document.querySelectorAll(".carta");
+        const tablero = document.body.children[2];
+        const cartas = Array.from(tablero.getElementsByTagName("article"));
         let todasReveladas = true;
 
         for (let i = cartas.length - 1; i > 0; i--) {
@@ -108,7 +109,8 @@ class Memoria {
 
 const juego = new Memoria();
 
-const cartas = document.querySelectorAll(".carta");
+const tablero = document.body.children[2];
+const cartas = Array.from(tablero.getElementsByTagName("article"));
 
 for (let carta of cartas) {
     carta.addEventListener("click", () => juego.voltearCarta(carta));

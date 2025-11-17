@@ -32,6 +32,30 @@ nav a {
     padding: 0px 5px;
 }
 
+
+/* El titular de cada noticia */
+main > section > article > h3 {
+    margin-bottom: 0.3rem;
+}
+
+/* El párrafo que viene justo después del h3 */
+main > section > article > h3 + p {
+    margin-bottom: 0.3rem;
+}
+
+/* La línea de fuente va justo después del párrafo */
+main > section > article > p + p {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+/* El enlace que viene después de todo */
+main > section > article > a {
+    display: inline-block;
+    margin-top: 0.2rem;
+}
+
 /* ========================================================= */
 /* Adaptabilidad del proyecto MotoGP-Desktop (Ejercicio 6) */
 /* ========================================================= */
@@ -73,5 +97,13 @@ nav a {
 
     audio {
         width: 100%;
+    }
+
+    /* Imagen del carrusel */
+    article h2 + img {
+        width: 100%;       /* Ocupa todo el ancho en móvil */
+        height: auto;      /* Mantén proporciones */
+        display: block;    /* Evita espacios laterales */
+        margin: 0 auto;    /* Centrada */
     }
 }
