@@ -154,16 +154,16 @@ if (isset($_POST["terminar"])) {
 <p>1. ¿En qué apartado de la web encontrarías la información del piloto?</p>
 <input type="text" name="p1" required>
 
-<p>2. ¿Dónde irías para consultar los datos del circuito?</p>
+<p>2. ¿Dónde irías para consultar los datos personales del piloto?</p>
 <input type="text" name="p2" required>
 
 <p>3. ¿Qué acción te permite visualizar el circuito sobre un mapa?</p>
 <input type="text" name="p3" required>
 
-<p>4. ¿Te resulta fácil encontrar la información meteorológica? ¿Dónde está?</p>
+<p>4. ¿Te resulta fácil encontrar la información meteorológica de la carrera? ¿Dónde está?</p>
 <input type="text" name="p4" required>
 
-<p>5. ¿Qué página muestra el ganador de la carrera?</p>
+<p>5. ¿Qué página crees que muestra el ganador de la carrera?</p>
 <input type="text" name="p5" required>
 
 <p>6. ¿Qué acción te permite visualizar la clasificación de la carrera?</p>
