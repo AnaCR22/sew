@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Circuito MotoGP</name>
+    <Placemark>
+      <name>Punto Origen</name>
+      <Point>
+        <coordinates>-6.0344,36.7089,58</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Recorrido del Circuito</name>
+      <LineString>
+        <tessellate>1</tessellate>
+        <coordinates>
+          -6.0344,36.7089,58
+          -6.0341,36.7095,60
+        </coordinates>
+      </LineString>
+    </Placemark>
+  </Document>
+</kml>

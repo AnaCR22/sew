@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<circuito xmlns="http://www.uniovi.es"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://www.uniovi.es circuito.xsd"
+          nombre="Circuito de Jerez – Ángel Nieto"
+          localidad="Jerez de la Frontera"
+          pais="España">
+
+    <dimensiones longitud="4428" anchura="12" unidad="m"/>
+    
+    <carrera fecha="2025-04-27" horaInicio="14:00" vueltas="25" />
+
+    <patrocinador>Red Bull</patrocinador>
+
+    <referencias>
+        <referencia url="https://www.circuitodejerez.com" />
+        <referencia url="https://es.wikipedia.org/wiki/Circuito_de_Jerez" />
+        <referencia url="https://www.motogp.com/es/circuito/Jerez" />
+    </referencias>
+    
+    <fotos>
+        <foto archivo="Jerez_Panorama.jpg" />
+    </fotos>
+
+    <videos>
+        <video archivo="Jerez_Onboard.mp4" />
+        <video archivo="Jerez_Highlights.mp4" />
+    </videos>
+
+    <puntoOrigen>
+        <punto longitud="-6.0344" latitud="36.7089" altitud="58" />
+    </puntoOrigen>
+
+    <tramos>
+        <tramo distancia="600" sector="1">
+            <punto longitud="-6.0341" latitud="36.7095" altitud="60" />
+        </tramo>
+    </tramos>
+
+    <vencedor nombre="Pedro Acosta" tiempo="41:37.812" />
+
+    <clasificacion>
+        <clasificado nombre="Pedro Acosta" puntos="270" />
+        <clasificado nombre="Francesco Bagnaia" puntos="260" />
+        <clasificado nombre="Marc Márquez" puntos="254" />
+    </clasificacion>
+    
+</circuito>

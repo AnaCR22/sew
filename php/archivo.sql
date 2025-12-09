@@ -1,0 +1,6 @@
+CREATE TABLE pilotos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL,
+    equipo VARCHAR(100) NOT NULL,
+    puntos INT DEFAULT 0
+);

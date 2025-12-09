@@ -56,6 +56,14 @@ main > section > article > a {
     margin-top: 0.2rem;
 }
 
+body > div {
+    width: 600px;
+    height: 400px;
+    border: 2px solid black;
+    margin-top: 20px;
+}
+
+
 /* ========================================================= */
 /* Adaptabilidad del proyecto MotoGP-Desktop (Ejercicio 6) */
 /* ========================================================= */

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<xs:schema
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="http://www.uniovi.es"
+    xmlns="http://www.uniovi.es"
+    elementFormDefault="qualified">
+
+	<!-- ELEMENTO PRINCIPAL -->
+	<xs:element name="circuito">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="dimensiones" type="tipoDimensiones"/>
+				<xs:element name="carrera" type="tipoCarrera"/>
+				<xs:element name="patrocinador" type="xs:string"/>
+				<xs:element name="referencias" type="tipoReferencias"/>
+				<xs:element name="fotos" type="tipoFotos"/>
+				<xs:element name="videos" type="tipoVideos"/>
+				<xs:element name="puntoOrigen" type="tipoPuntoOrigen"/>
+				<xs:element name="tramos" type="tipoTramos"/>
+				<xs:element name="vencedor" type="tipoVencedor"/>
+				<xs:element name="clasificacion" type="tipoClasificacion"/>
+			</xs:sequence>
+
+			<xs:attribute name="nombre" type="xs:string" use="required"/>
+			<xs:attribute name="localidad" type="xs:string" use="required"/>
+			<xs:attribute name="pais" type="xs:string" use="required"/>
+		</xs:complexType>
+	</xs:element>
+
+	<!-- DIMENSIONES -->
+	<xs:complexType name="tipoDimensiones">
+		<xs:attribute name="longitud" use="required">
+			<xs:simpleType>
+				<xs:restriction base="xs:positiveInteger">
+					<xs:minInclusive value="1000"/>
+					<xs:maxInclusive value="10000"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+
+		<xs:attribute name="anchura" use="required">
+			<xs:simpleType>
+				<xs:restriction base="xs:positiveInteger">
+					<xs:minInclusive value="5"/>
+					<xs:maxInclusive value="25"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+
+		<xs:attribute name="unidad" use="required">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="m"/>
+					<xs:enumeration value="km"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:complexType>
+
+	<!-- CARRERA -->
+	<xs:complexType name="tipoCarrera">
+		<xs:attribute name="fecha" type="xs:date" use="required"/>
+		<xs:attribute name="horaInicio">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:pattern value="\d{2}:\d{2}"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="vueltas" type="xs:positiveInteger" use="required"/>
+	</xs:complexType>
+
+	<!-- REFERENCIAS -->
+	<xs:complexType name="tipoReferencias">
+		<xs:sequence>
+			<xs:element name="referencia" type="tipoReferencia" minOccurs="1" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="tipoReferencia">
+		<xs:attribute name="url" type="xs:anyURI" use="required"/>
+	</xs:complexType>
+
+	<!-- FOTOS -->
+	<xs:complexType name="tipoFotos">
+		<xs:sequence>
+			<xs:element name="foto" type="tipoFoto" minOccurs="1" maxOccurs="10"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="tipoFoto">
+		<xs:attribute name="archivo" type="xs:string" use="required"/>
+	</xs:complexType>
+
+	<!-- VIDEOS -->
+	<xs:complexType name="tipoVideos">
+		<xs:sequence>
+			<xs:element name="video" type="tipoVideo" minOccurs="1" maxOccurs="10"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="tipoVideo">
+		<xs:attribute name="archivo" type="xs:string" use="required"/>
+	</xs:complexType>
+
+	<!-- PUNTO ORIGEN -->
+	<xs:complexType name="tipoPuntoOrigen">
+		<xs:sequence>
+			<xs:element name="punto" type="tipoPunto"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<!-- PUNTO -->
+	<xs:complexType name="tipoPunto">
+		<xs:attribute name="longitud" use="required">
+			<xs:simpleType>
+				<xs:restriction base="xs:decimal">
+					<xs:minInclusive value="-180"/>
+					<xs:maxInclusive value="180"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+
+		<xs:attribute name="latitud" use="required">
+			<xs:simpleType>
+				<xs:restriction base="xs:decimal">
+					<xs:minInclusive value="-90"/>
+					<xs:maxInclusive value="90"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+
+		<xs:attribute name="altitud" type="xs:integer" use="required"/>
+	</xs:complexType>
+
+	<!-- TRAMOS -->
+	<xs:complexType name="tipoTramos">
+		<xs:sequence>
+			<xs:element name="tramo" type="tipoTramo" minOccurs="1" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="tipoTramo">
+		<xs:sequence>
+			<xs:element name="punto" type="tipoPunto"/>
+		</xs:sequence>
+
+		<xs:attribute name="distancia" type="xs:positiveInteger" use="required"/>
+		<xs:attribute name="sector">
+			<xs:simpleType>
+				<xs:restriction base="xs:positiveInteger">
+					<xs:minInclusive value="1"/>
+					<xs:maxInclusive value="3"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:complexType>
+
+	<!-- VENCEDOR -->
+	<xs:complexType name="tipoVencedor">
+		<xs:attribute name="nombre" type="xs:string" use="required"/>
+		<xs:attribute name="tiempo">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:pattern value="\d{2}:\d{2}\.\d{3}"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:complexType>
+
+	<!-- CLASIFICACIÓN -->
+	<xs:complexType name="tipoClasificacion">
+		<xs:sequence>
+			<xs:element name="clasificado" type="tipoClasificado" minOccurs="3" maxOccurs="3"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="tipoClasificado">
+		<xs:attribute name="nombre" type="xs:string" use="required"/>
+		<xs:attribute name="puntos" type="xs:nonNegativeInteger" use="required"/>
+	</xs:complexType>
+
+</xs:schema>

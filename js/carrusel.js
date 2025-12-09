@@ -17,7 +17,7 @@ class Carrusel {
         dataType: "jsonp",
         data: {
             format: "json",
-            tags: this.busqueda,     // ej: "MotoGP, Jerez"
+            tags: this.busqueda,
             tagmode: "all"
             }
         }); 
