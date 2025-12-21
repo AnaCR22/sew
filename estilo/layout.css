@@ -1,32 +1,24 @@
 /*Datos personales: Ana Calleja Ramon UO300568*/
-/* Estilos generales del proyecto MotoGP-Desktop*/
-/* Uso del módulo CSS-Flexible Box Layout (Flexbox) */
-/*#071330 Azul oscuro
-#2B6488 Azul grisáceo
-#C3D6DB Azul claro
-#FFFFFF Blanco
-*/
+/*Estilos para el layout del proyecto MotoGP-Desktop*/
 
-/* Selector de tipo (especificidad 0-0-0-1)
-   Se aplica Flexbox al header para distribuir el título y el menú */
+
+/*Selector de tipo (especificidad 0-0-0-1)*/
 header {
-    display: flex; /* activa flexbox */
-    justify-content: space-between; /* separa el h1 y el nav */
-    align-items: center; /* centra verticalmente los elementos */
-    padding: 5px 10px; /* margen interno para respiración visual */
-    flex-wrap: wrap; /* permite que el contenido se adapte en pantallas pequeñas */
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 5px 10px; 
+    flex-wrap: wrap; 
 }
 
-/* Selector descendente de tipo (especificidad 0-0-0-2)
-   Se aplica Flexbox al nav para distribuir los enlaces */
+/*Selector descendente de tipo (especificidad 0-0-0-2)*/
 nav {
     display: flex;
-    gap: 5px; /* espacio entre los enlaces */
-    flex-wrap: wrap; /* los enlaces se acomodan en varias líneas si hace falta */
+    gap: 5px; 
+    flex-wrap: wrap; 
 }
 
-/* Selector de tipo (especificidad 0-0-0-1)
-   Se asegura que los enlaces sean legibles y centrados dentro del nav */
+/*Selector de tipo (especificidad 0-0-0-1)*/
 nav a {
     text-decoration: none;
     padding: 0px 5px;
@@ -64,40 +56,30 @@ body > div {
 }
 
 
-/* ========================================================= */
-/* Adaptabilidad del proyecto MotoGP-Desktop (Ejercicio 6) */
-/* ========================================================= */
-
-/* Reglas para dispositivos móviles (320px a 799px)
-   Se redefinen las propiedades flexbox del header y nav */
-/* Propiedades redefinidas: display, flex-direction, justify-content, align-items */
+/* Reglas para dispositivos móviles (320px a 799px)*/
 @media (min-width: 320px) and (max-width: 799px) {
 
-    /* Selector de tipo (especificidad 0-0-0-1)
-       Cambia la disposición del header a vertical */
+    /* Selector de tipo (especificidad 0-0-0-1)*/
     header {
         display: flex;
-        flex-direction: column; /* antes estaba en fila (row), ahora en columna */
-        align-items: center; /* centra los elementos en la columna */
-        justify-content: center; /* redefinido */
+        flex-direction: column; 
+        align-items: center;
+        justify-content: center; 
     }
 
-    /* Selector de tipo (especificidad 0-0-0-1)
-       Cambia el comportamiento del nav para apilar los enlaces */
+    /*Selector de tipo (especificidad 0-0-0-1)*/
     nav {
         display: flex;
-        flex-direction: column; /* los enlaces se apilan */
+        flex-direction: column; 
         align-items: center;
-        gap: 10px; /* espacio entre enlaces */
+        gap: 10px; 
     }
 
-    /* Selector de clase o tipo específico (especificidad 0-0-0-1)
-       Oculta las migas de navegación */
+    /* Selector de clase o tipo específico (especificidad 0-0-0-1)*/
     header + p  {
-        display: none; /* no se muestran en móviles */
+        display: none; 
     }
 
-    /* Adaptabilidad multimedia */
     video {
         width: 100%;
         height: auto;
@@ -109,9 +91,9 @@ body > div {
 
     /* Imagen del carrusel */
     article h2 + img {
-        width: 100%;       /* Ocupa todo el ancho en móvil */
-        height: auto;      /* Mantén proporciones */
-        display: block;    /* Evita espacios laterales */
-        margin: 0 auto;    /* Centrada */
+        width: 100%;      
+        height: auto;     
+        display: block;    
+        margin: 0 auto;  
     }
 }

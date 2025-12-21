@@ -151,25 +151,25 @@ if (isset($_POST["terminar"])) {
 
 <form method="post">
 
-<p>1. ¿En qué apartado de la web encontrarías la información del piloto?</p>
+<p>1. ¿En qué equipos no ha competido Alex Márquez?</p>
 <input type="text" name="p1" required>
 
-<p>2. ¿Dónde irías para consultar los datos personales del piloto?</p>
+<p>2. ¿Cuántos puntos obtuvo Alex Márquez en la resultados de MotoGP 2024?</p>
 <input type="text" name="p2" required>
 
-<p>3. ¿Qué acción te permite visualizar el circuito sobre un mapa?</p>
+<p>3. ¿Qué sección te permite visualizar el circuito sobre un mapa?</p>
 <input type="text" name="p3" required>
 
-<p>4. ¿Te resulta fácil encontrar la información meteorológica de la carrera? ¿Dónde está?</p>
+<p>4. ¿Qué temperatura hubo justo el día de la carrera? Índicalo en grados</p>
 <input type="text" name="p4" required>
 
-<p>5. ¿Qué página crees que muestra el ganador de la carrera?</p>
+<p>5. ¿Quién fue el ganador de la carrera?</p>
 <input type="text" name="p5" required>
 
-<p>6. ¿Qué acción te permite visualizar la clasificación de la carrera?</p>
+<p>6. ¿Qué sección te permite visualizar la clasificación de la carrera?</p>
 <input type="text" name="p6" required>
 
-<p>7. ¿Te ha resultado intuitivo el juego de cartas?</p>
+<p>7. ¿Cuántas secciones hay en el apartado juegos?</p>
 <input type="text" name="p7" required>
 
 <p>8. ¿Consideras que la sección de noticias en el apartado inicio es clara, 

@@ -1,63 +1,74 @@
 /*Datos personales: Ana Calleja Ramon UO300568*/
-/* Estilos generales del proyecto MotoGP-Desktop*/
+/*Estilos generales del proyecto MotoGP-Desktop*/
 
-/*#071330 Azul oscuro
-#2B6488 Azul grisáceo
-#C3D6DB Azul claro
-#FFFFFF Blanco
-*/
 
 /* Selector de tipo (especificidad 0-0-0-1) */
 body{
     background-color: #FFFFFF; 
-    color: #071330;
+    color: #000000;
     font-family: "Cambria", serif;
 }
 
 /* Selector de tipo: especificidad 0-0-0-1 */
 header {
-    background-color: #C3D6DB;
-    color: #071330;
+    background-color: #000000;
+    color: #E7131A;
 }
 
-/* Selector de tipo: especificidad 0-0-0-1 */
-h1{
-    color: #071330;
-    /* Advertencia: color de fondo heredado de header #C3D6DB*/
+/* Selector descendente: especificidad 0-0-0-2 */
+/* Aplica un margen inferior al encabezado */
+main h2 {
+    margin-bottom: 0.4rem;
+    border-bottom: 1px solid #970C10;
+
+}
+
+/* Selector descendente: especificidad 0-0-0-2 */
+main h3 {
+    margin-top: 0.6rem;
+    margin-bottom: 0.2rem;
+}
+
+/* Selector descendente: especificidad 0-0-0-2 */
+/* Elimina el margen superior de los párrafos que siguen a los encabezados para mejor legibilidad */
+main h2 + p,
+main h3 + p,
+main h3 + ul,
+main h3 + ol,
+main h3 + dl {
+    margin-top: 0;
+    /* Advertencia: color de fondo heredado de body #FFFFFF*/
+
 }
 
 /* Selector de tipo: especificidad 0-0-0-1 */
 h2, h3, h4, h5, h6 {
-    color: #2B6488; 
+    color: #970C10; 
     /* Advertencia: color de fondo heredado de body #FFFFFF*/
 }
 
-/* Selector de tipo: especificidad 0-0-0-1 */
-nav {
-    background-color: #C3D6DB;
-    color: #071330;
-}
-
-
+/* Selector descendente de clase: especificidad 0-0-1-2 */
 nav a.active {
-    color: #D90429;    
+    color: #E7131A;    
     text-decoration-line: none;   
+    /* Advertencia: color de fondo heredado de body #FFFFFF*/
 }
-
 
 /* Especificidad 0-0-1-1 */
 a:link,
 a:visited {
-    color: #071330; 
-    text-decoration-line: none;   
+    color: #E7131A; 
+    /* Advertencia: color de fondo heredado de body #FFFFFF*/
 }
 
 /* Especificidad 0-0-1-1 */
 a:hover {
-    color: #2B6488; 
-    text-decoration-line: none;   
+    color: #8B8060; 
+    /* Advertencia: color de fondo heredado de body #FFFFFF*/
 }
 
+/* Selector adyacente: especificidad 0-0-0-2 */
 header + p {
     font-size: smaller;
 }
+
