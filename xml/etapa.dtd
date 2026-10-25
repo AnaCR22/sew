@@ -1,0 +1,61 @@
+<!ELEMENT etapa (nombreEtapa, numero, longitudEtapa, fecha, tiempoGanador, velocidadGanador, desnivel, ciudadInicial, ciudadFinal, tipo, referencias, fotografias, videos, sonidos, puntoOrigen, puntoFinal, hitos, puntosAnonimos, clasificadosEtapa, clasificadosGeneral, equipos)>
+<!ELEMENT nombreEtapa (#PCDATA)>
+<!ELEMENT numero (#PCDATA)>
+<!ELEMENT longitudEtapa (#PCDATA)>
+<!ATTLIST longitudEtapa unidad CDATA #REQUIRED>
+<!ELEMENT fecha (#PCDATA)>
+<!ELEMENT tiempoGanador (#PCDATA)>
+<!ELEMENT velocidadGanador (#PCDATA)>
+<!ATTLIST velocidadGanador unidad CDATA #REQUIRED>
+<!ELEMENT desnivel (#PCDATA)>
+<!ATTLIST desnivel unidad CDATA #REQUIRED>
+<!ELEMENT ciudadInicial (#PCDATA)>
+<!ELEMENT ciudadFinal (#PCDATA)>
+<!ELEMENT tipo (#PCDATA)>
+<!ELEMENT referencias (referencia+)>
+<!ELEMENT referencia (#PCDATA)>
+<!ATTLIST referencia fuente CDATA #REQUIRED>
+<!ATTLIST referencia descripcion CDATA #IMPLIED>
+<!ELEMENT fotografias (fotografia+)>
+<!ELEMENT fotografia (#PCDATA)>
+<!ATTLIST fotografia descripcion CDATA #IMPLIED>
+<!ELEMENT videos (video+)>
+<!ELEMENT video (#PCDATA)>
+<!ATTLIST video descripcion CDATA #IMPLIED>
+<!ELEMENT sonidos (sonido+)>
+<!ELEMENT sonido (#PCDATA)>
+<!ATTLIST sonido descripcion CDATA #IMPLIED>
+<!ELEMENT puntoOrigen (punto)>
+<!ELEMENT puntoFinal (punto)>
+<!ELEMENT hitos ((puertoMontana | sprintIntermedio)+)>
+<!ELEMENT puertoMontana (punto, distancia)>
+<!ATTLIST puertoMontana
+    categoria CDATA #REQUIRED
+    bonificado CDATA #REQUIRED>
+<!ELEMENT sprintIntermedio (punto, distancia)>
+<!ATTLIST sprintIntermedio bonificado CDATA #REQUIRED>
+<!ELEMENT punto (longitudPunto, latitudPunto, altitudPunto)>
+<!ELEMENT longitudPunto (#PCDATA)>
+<!ATTLIST longitudPunto unidad CDATA #REQUIRED>
+<!ELEMENT latitudPunto (#PCDATA)>
+<!ATTLIST latitudPunto unidad CDATA #REQUIRED>
+<!ELEMENT altitudPunto (#PCDATA)>
+<!ATTLIST altitudPunto unidad CDATA #REQUIRED>
+<!ELEMENT distancia (#PCDATA)>
+<!ATTLIST distancia unidad CDATA #REQUIRED>
+<!ELEMENT puntosAnonimos (puntoAnonimo+)>
+<!ELEMENT puntoAnonimo (nombrePunto?, punto, distancia)>
+<!ELEMENT nombrePunto (#PCDATA)>
+<!ELEMENT clasificadosEtapa (primerClasificado, segundoClasificado, tercerClasificado)>
+<!ELEMENT clasificadosGeneral (primerClasificado, segundoClasificado, tercerClasificado)>
+<!ELEMENT primerClasificado (#PCDATA)>
+<!ELEMENT segundoClasificado (#PCDATA)>
+<!ATTLIST segundoClasificado diferencia CDATA #REQUIRED>
+<!ELEMENT tercerClasificado (#PCDATA)>
+<!ATTLIST tercerClasificado diferencia CDATA #REQUIRED>
+<!ELEMENT equipos (primerEquipo, segundoEquipo, tercerEquipo)>
+<!ELEMENT primerEquipo (#PCDATA)>
+<!ELEMENT segundoEquipo (#PCDATA)>
+<!ATTLIST segundoEquipo diferencia CDATA #REQUIRED>
+<!ELEMENT tercerEquipo (#PCDATA)>
+<!ATTLIST tercerEquipo diferencia CDATA #REQUIRED>

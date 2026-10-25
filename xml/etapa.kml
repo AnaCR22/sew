@@ -1,0 +1,381 @@
+<?xml version='1.0' encoding='utf-8'?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Dos Hermanas a Sevilla</name>
+    <Style id="estiloRojo">
+      <IconStyle>
+        <color>ff0000ff</color>
+        <scale>1.0</scale>
+      </IconStyle>
+    </Style>
+    <Style id="estiloVerde">
+      <IconStyle>
+        <color>ff00ff00</color>
+        <scale>1.0</scale>
+      </IconStyle>
+    </Style>
+    <Style id="estiloAzul">
+      <IconStyle>
+        <color>ffff0000</color>
+        <scale>1.0</scale>
+      </IconStyle>
+    </Style>
+    <Style id="estiloAmarillo">
+      <IconStyle>
+        <color>ff00ffff</color>
+        <scale>1.0</scale>
+      </IconStyle>
+    </Style>
+    <Placemark>
+      <name>Recorrido Dos Hermanas a Sevilla</name>
+      <Style>
+        <LineStyle>
+          <color>ff0000ff</color>
+          <width>4</width>
+        </LineStyle>
+      </Style>
+      <LineString>
+        <extrude>0</extrude>
+        <tessellate>1</tessellate>
+        <altitudeMode>clampToGround</altitudeMode>
+        <coordinates>-5.924204,37.226300,31.205398
+-5.923805,37.159788,11.0
+-5.838822,37.179212,21.4
+-5.779895,37.184908,49.2
+-5.776030,37.160582,54.7
+-5.761861,37.162215,60.2
+-5.643961,37.081868,95.2
+-5.582428,37.065058,151.8
+-5.555225,37.067950,161.9
+-5.540963,37.060332,187.1
+-5.479329,37.098676,166.0
+-5.463642,37.121205,217.1
+-5.520492,37.117756,141.4
+-5.603161,37.151140,90.3
+-5.632251,37.140434,88.6
+-5.647966,37.176843,79.0
+-5.800153,37.304916,44.7
+-5.815182,37.327947,59.1
+-5.826000,37.346128,93.4
+-5.748701,37.376244,134.1
+-5.721751,37.388735,161.9
+-5.641643,37.471117,217.1
+-5.707371,37.501348,95.7
+-5.805845,37.507919,53.4
+-5.840341,37.523807,33.2
+-5.857646,37.539794,27.3
+-5.922638,37.479494,16.0
+-5.950769,37.483472,11.8
+-5.977843,37.489323,10.7
+-5.978899,37.478703,8.6
+-5.971276,37.468861,7.7
+-5.982768,37.422028,9.4
+-6.011156,37.386259,9.8
+-6.003919,37.373988,7.8
+-5.991835,37.375476,6.1
+-5.999034,37.385334,8.140659</coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>Los Palacios y Villafranca</name>
+      <description>Distancia desde el origen: 7.9 km</description>
+      <styleUrl>#estiloAmarillo</styleUrl>
+      <Point>
+        <coordinates>-5.923805,37.159788,11.0</coordinates>
+        <altitudeMode>clampToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <description>Distancia desde el origen: 15.9 km</description>
+      <styleUrl>#estiloAmarillo</styleUrl>
+      <Point>
+        <coordinates>-5.838822,37.179212,21.4</coordinates>
+        <altitudeMode>clampToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Utrera</name>
+      <description>Distancia desde el origen: 21.5 km</description>
+      <styleUrl>#estiloAmarillo</styleUrl>
+      <Point>
+        <coordinates>-5.779895,37.184908,49.2</coordinates>
+        <altitudeMode>clampToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <description>Distancia desde el origen: 24.4 km</description>
+      <styleUrl>#estiloAmarillo</styleUrl>
+      <Point>
+        <coordinates>-5.776030,37.160582,54.7</coordinates>
+        <altitudeMode>clampToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <description>Distancia desde el origen: 25.7 km</description>
+      <styleUrl>#estiloAmarillo</styleUrl>
+      <Point>
+        <coordinates>-5.761861,37.162215,60.2</coordinates>
+        <altitudeMode>clampToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>El Coronil</name>
+      <description>Distancia desde el origen: 39.9 km</description>
+      <styleUrl>#estiloAmarillo</styleUrl>
+      <Point>
+        <coordinates>-5.643961,37.081868,95.2</coordinates>
+        <altitudeMode>clampToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <description>Distancia desde el origen: 46.6 km</description>
+      <styleUrl>#estiloAmarillo</styleUrl>
+      <Point>
+        <coordinates>-5.582428,37.065058,151.8</coordinates>
+        <altitudeMode>clampToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <description>Distancia desde el origen: 49.1 km</description>
+      <styleUrl>#estiloAmarillo</styleUrl>
+      <Point>
+        <coordinates>-5.555225,37.067950,161.9</coordinates>
+        <altitudeMode>clampToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <description>Distancia desde el origen: 50.6 km</description>
+      <styleUrl>#estiloAmarillo</styleUrl>
+      <Point>
+        <coordinates>-5.540963,37.060332,187.1</coordinates>
+        <altitudeMode>clampToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Caleras de la Sierra</name>
+      <description>Distancia desde el origen: 58.0 km</description>
+      <styleUrl>#estiloAmarillo</styleUrl>
+      <Point>
+        <coordinates>-5.479329,37.098676,166.0</coordinates>
+        <altitudeMode>clampToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Morón de la Frontera</name>
+      <description>Distancia desde el origen: 61.2 km</description>
+      <styleUrl>#estiloAmarillo</styleUrl>
+      <Point>
+        <coordinates>-5.463642,37.121205,217.1</coordinates>
+        <altitudeMode>clampToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <description>Distancia desde el origen: 66.4 km</description>
+      <styleUrl>#estiloAmarillo</styleUrl>
+      <Point>
+        <coordinates>-5.520492,37.117756,141.4</coordinates>
+        <altitudeMode>clampToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <description>Distancia desde el origen: 74.8 km</description>
+      <styleUrl>#estiloAmarillo</styleUrl>
+      <Point>
+        <coordinates>-5.603161,37.151140,90.3</coordinates>
+        <altitudeMode>clampToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <description>Distancia desde el origen: 77.6 km</description>
+      <styleUrl>#estiloAmarillo</styleUrl>
+      <Point>
+        <coordinates>-5.632251,37.140434,88.6</coordinates>
+        <altitudeMode>clampToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <description>Distancia desde el origen: 82.3 km</description>
+      <styleUrl>#estiloAmarillo</styleUrl>
+      <Point>
+        <coordinates>-5.647966,37.176843,79.0</coordinates>
+        <altitudeMode>clampToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <description>Distancia desde el origen: 101.9 km</description>
+      <styleUrl>#estiloAmarillo</styleUrl>
+      <Point>
+        <coordinates>-5.800153,37.304916,44.7</coordinates>
+        <altitudeMode>clampToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <description>Distancia desde el origen: 104.9 km</description>
+      <styleUrl>#estiloAmarillo</styleUrl>
+      <Point>
+        <coordinates>-5.815182,37.327947,59.1</coordinates>
+        <altitudeMode>clampToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Alcalá de Guadaira</name>
+      <description>Distancia desde el origen: 109.4 km</description>
+      <styleUrl>#estiloAmarillo</styleUrl>
+      <Point>
+        <coordinates>-5.826000,37.346128,93.4</coordinates>
+        <altitudeMode>clampToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Mairena del Alcor</name>
+      <description>Distancia desde el origen: 117.2 km</description>
+      <styleUrl>#estiloAmarillo</styleUrl>
+      <Point>
+        <coordinates>-5.748701,37.376244,134.1</coordinates>
+        <altitudeMode>clampToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>El Viso del Alcor</name>
+      <description>Distancia desde el origen: 120.2 km</description>
+      <styleUrl>#estiloAmarillo</styleUrl>
+      <Point>
+        <coordinates>-5.721751,37.388735,161.9</coordinates>
+        <altitudeMode>clampToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Carmona</name>
+      <description>Distancia desde el origen: 132.2 km</description>
+      <styleUrl>#estiloAmarillo</styleUrl>
+      <Point>
+        <coordinates>-5.641643,37.471117,217.1</coordinates>
+        <altitudeMode>clampToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <description>Distancia desde el origen: 139.3 km</description>
+      <styleUrl>#estiloAmarillo</styleUrl>
+      <Point>
+        <coordinates>-5.707371,37.501348,95.7</coordinates>
+        <altitudeMode>clampToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <description>Distancia desde el origen: 148.2 km</description>
+      <styleUrl>#estiloAmarillo</styleUrl>
+      <Point>
+        <coordinates>-5.805845,37.507919,53.4</coordinates>
+        <altitudeMode>clampToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <description>Distancia desde el origen: 151.9 km</description>
+      <styleUrl>#estiloAmarillo</styleUrl>
+      <Point>
+        <coordinates>-5.840341,37.523807,33.2</coordinates>
+        <altitudeMode>clampToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <description>Distancia desde el origen: 154.3 km</description>
+      <styleUrl>#estiloAmarillo</styleUrl>
+      <Point>
+        <coordinates>-5.857646,37.539794,27.3</coordinates>
+        <altitudeMode>clampToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <description>Distancia desde el origen: 163.3 km</description>
+      <styleUrl>#estiloAmarillo</styleUrl>
+      <Point>
+        <coordinates>-5.922638,37.479494,16.0</coordinates>
+        <altitudeMode>clampToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>La Rinconada</name>
+      <description>Distancia desde el origen: 168.5 km</description>
+      <styleUrl>#estiloAmarillo</styleUrl>
+      <Point>
+        <coordinates>-5.977843,37.489323,10.7</coordinates>
+        <altitudeMode>clampToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <description>Distancia desde el origen: 169.7 km</description>
+      <styleUrl>#estiloAmarillo</styleUrl>
+      <Point>
+        <coordinates>-5.978899,37.478703,8.6</coordinates>
+        <altitudeMode>clampToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <description>Distancia desde el origen: 171.0 km</description>
+      <styleUrl>#estiloAmarillo</styleUrl>
+      <Point>
+        <coordinates>-5.971276,37.468861,7.7</coordinates>
+        <altitudeMode>clampToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <description>Distancia desde el origen: 176.3 km</description>
+      <styleUrl>#estiloAmarillo</styleUrl>
+      <Point>
+        <coordinates>-5.982768,37.422028,9.4</coordinates>
+        <altitudeMode>clampToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <description>Distancia desde el origen: 181.4 km</description>
+      <styleUrl>#estiloAmarillo</styleUrl>
+      <Point>
+        <coordinates>-6.011156,37.386259,9.8</coordinates>
+        <altitudeMode>clampToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <description>Distancia desde el origen: 183.0 km</description>
+      <styleUrl>#estiloAmarillo</styleUrl>
+      <Point>
+        <coordinates>-6.003919,37.373988,7.8</coordinates>
+        <altitudeMode>clampToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <description>Distancia desde el origen: 184.1 km</description>
+      <styleUrl>#estiloAmarillo</styleUrl>
+      <Point>
+        <coordinates>-5.991835,37.375476,6.1</coordinates>
+        <altitudeMode>clampToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Sprint intermedio</name>
+      <description>Sprint intermedio (bonificado: true)</description>
+      <styleUrl>#estiloAzul</styleUrl>
+      <Point>
+        <coordinates>-5.950769,37.483472,11.8</coordinates>
+        <altitudeMode>clampToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Salida</name>
+      <description>Punto de salida de la etapa</description>
+      <styleUrl>#estiloRojo</styleUrl>
+      <Point>
+        <coordinates>-5.924204,37.226300,31.205398</coordinates>
+        <altitudeMode>clampToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Meta</name>
+      <description>Punto de meta de la etapa</description>
+      <styleUrl>#estiloRojo</styleUrl>
+      <Point>
+        <coordinates>-5.999034,37.385334,8.140659</coordinates>
+        <altitudeMode>clampToGround</altitudeMode>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

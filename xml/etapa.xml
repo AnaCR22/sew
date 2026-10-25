@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE etapa SYSTEM "etapa.dtd">
+<etapa>
+    <nombreEtapa>Dos Hermanas a Sevilla</nombreEtapa>
+    <numero>17</numero>
+    <longitudEtapa unidad="kilometros">185</longitudEtapa>
+    <fecha>2026-09-09</fecha>
+    <tiempoGanador>4:07:15</tiempoGanador>
+    <velocidadGanador unidad = "kilometros/hora">44.9</velocidadGanador>
+    <desnivel unidad="metros">930</desnivel>
+    <ciudadInicial>Dos Hermanas</ciudadInicial>
+    <ciudadFinal>Sevilla</ciudadFinal>
+    <tipo>Llana</tipo>
+    <referencias>
+        <referencia fuente="Wikipedia" descripcion="Información detallada sobre la ciudad de salida, Dos Hermanas.">
+            https://es.wikipedia.org/wiki/Dos_Hermanas
+        </referencia>
+        <referencia fuente="Wikipedia" descripcion="Información detallada sobre la ciudad de meta, Sevilla.">
+            https://es.wikipedia.org/wiki/Sevilla
+        </referencia>
+        <referencia fuente="Rtve" descripcion="Información detallada sobre la etapa 17 de La Vuelta 2026: perfil, recorrido, hora y dónde ver.">
+            https://www.rtve.es/deportes/20260908/vuelta-2026-perfil-recorrido-hora-donde-ver-claves-etapa-17-sevilla/17177337.shtml
+        </referencia>
+    </referencias>
+
+    <fotografias>
+        <fotografia descripcion="Fotografia de la ciudad de salida: Dos Hermmanas">./multimedia/salida.jpg</fotografia>    
+        <fotografia descripcion="Fotografia de la ciudad de meta: Sevilla">./multimedia/meta.jpg</fotografia>    
+    </fotografias>
+
+    <videos>
+        <video descripcion="La Vuelta 2026 - Etapa 17: Recorrido y Altimetria">./multimedia/recorrido.mp4</video>    
+    </videos>
+
+    <sonidos>
+        <sonido descripcion="La Vuelta 2026 - Sprint Final de la Etapa 17">./multimedia/final.m4a</sonido>
+    </sonidos>
+
+    <puntoOrigen>
+    <punto>
+        <longitudPunto unidad="grados">-5.924204</longitudPunto>
+        <latitudPunto unidad="grados">37.226300</latitudPunto>
+        <altitudPunto unidad="metros">31.205398</altitudPunto>
+    </punto>
+    </puntoOrigen>
+
+    <puntoFinal>
+        <punto>
+            <longitudPunto unidad="grados">-5.999034</longitudPunto>
+            <latitudPunto unidad="grados">37.385334</latitudPunto>
+            <altitudPunto unidad="metros">8.140659</altitudPunto>
+        </punto>
+    </puntoFinal>
+
+        <hitos>
+        <sprintIntermedio bonificado="true">
+            <punto>
+                <longitudPunto unidad="grados">-5.950769</longitudPunto>
+                <latitudPunto unidad="grados">37.483472</latitudPunto>
+                <altitudPunto unidad="metros">11.8</altitudPunto>
+            </punto>
+            <distancia unidad="kilometros">165.9</distancia>
+        </sprintIntermedio>
+    </hitos>
+
+    <puntosAnonimos>
+        <puntoAnonimo>
+            <nombrePunto>Los Palacios y Villafranca</nombrePunto>
+            <punto>
+                <longitudPunto unidad="grados">-5.923805</longitudPunto>
+                <latitudPunto unidad="grados">37.159788</latitudPunto>
+                <altitudPunto unidad="metros">11.0</altitudPunto>
+            </punto>
+            <distancia unidad="kilometros">7.9</distancia>
+        </puntoAnonimo>
+        <puntoAnonimo>
+            <punto>
+                <longitudPunto unidad="grados">-5.838822</longitudPunto>
+                <latitudPunto unidad="grados">37.179212</latitudPunto>
+                <altitudPunto unidad="metros">21.4</altitudPunto>
+            </punto>
+            <distancia unidad="kilometros">15.9</distancia>
+        </puntoAnonimo>
+        <puntoAnonimo>
+            <nombrePunto>Utrera</nombrePunto>
+            <punto>
+                <longitudPunto unidad="grados">-5.779895</longitudPunto>
+                <latitudPunto unidad="grados">37.184908</latitudPunto>
+                <altitudPunto unidad="metros">49.2</altitudPunto>
+            </punto>
+            <distancia unidad="kilometros">21.5</distancia>
+        </puntoAnonimo>
+        <puntoAnonimo>
+            <punto>
+                <longitudPunto unidad="grados">-5.776030</longitudPunto>
+                <latitudPunto unidad="grados">37.160582</latitudPunto>
+                <altitudPunto unidad="metros">54.7</altitudPunto>
+            </punto>
+            <distancia unidad="kilometros">24.4</distancia>
+        </puntoAnonimo>
+        <puntoAnonimo>
+            <punto>
+                <longitudPunto unidad="grados">-5.761861</longitudPunto>
+                <latitudPunto unidad="grados">37.162215</latitudPunto>
+                <altitudPunto unidad="metros">60.2</altitudPunto>
+            </punto>
+            <distancia unidad="kilometros">25.7</distancia>
+        </puntoAnonimo>
+        <puntoAnonimo>
+            <nombrePunto>El Coronil</nombrePunto>
+            <punto>
+                <longitudPunto unidad="grados">-5.643961</longitudPunto>
+                <latitudPunto unidad="grados">37.081868</latitudPunto>
+                <altitudPunto unidad="metros">95.2</altitudPunto>
+            </punto>
+            <distancia unidad="kilometros">39.9</distancia>
+        </puntoAnonimo>
+        <puntoAnonimo>
+            <punto>
+                <longitudPunto unidad="grados">-5.582428</longitudPunto>
+                <latitudPunto unidad="grados">37.065058</latitudPunto>
+                <altitudPunto unidad="metros">151.8</altitudPunto>
+            </punto>
+            <distancia unidad="kilometros">46.6</distancia>
+        </puntoAnonimo>
+        <puntoAnonimo>
+            <punto>
+                <longitudPunto unidad="grados">-5.555225</longitudPunto>
+                <latitudPunto unidad="grados">37.067950</latitudPunto>
+                <altitudPunto unidad="metros">161.9</altitudPunto>
+            </punto>
+            <distancia unidad="kilometros">49.1</distancia>
+        </puntoAnonimo>
+        <puntoAnonimo>
+            <punto>
+                <longitudPunto unidad="grados">-5.540963</longitudPunto>
+                <latitudPunto unidad="grados">37.060332</latitudPunto>
+                <altitudPunto unidad="metros">187.1</altitudPunto>
+            </punto>
+            <distancia unidad="kilometros">50.6</distancia>
+        </puntoAnonimo>
+        <puntoAnonimo>
+            <nombrePunto>Caleras de la Sierra</nombrePunto>
+            <punto>
+                <longitudPunto unidad="grados">-5.479329</longitudPunto>
+                <latitudPunto unidad="grados">37.098676</latitudPunto>
+                <altitudPunto unidad="metros">166.0</altitudPunto>
+            </punto>
+            <distancia unidad="kilometros">58.0</distancia>
+        </puntoAnonimo>
+        <puntoAnonimo>
+            <nombrePunto>Morón de la Frontera</nombrePunto>
+            <punto>
+                <longitudPunto unidad="grados">-5.463642</longitudPunto>
+                <latitudPunto unidad="grados">37.121205</latitudPunto>
+                <altitudPunto unidad="metros">217.1</altitudPunto>
+            </punto>
+            <distancia unidad="kilometros">61.2</distancia>
+        </puntoAnonimo>
+        <puntoAnonimo>
+            <punto>
+                <longitudPunto unidad="grados">-5.520492</longitudPunto>
+                <latitudPunto unidad="grados">37.117756</latitudPunto>
+                <altitudPunto unidad="metros">141.4</altitudPunto>
+            </punto>
+            <distancia unidad="kilometros">66.4</distancia>
+        </puntoAnonimo>
+        <puntoAnonimo>
+            <punto>
+                <longitudPunto unidad="grados">-5.603161</longitudPunto>
+                <latitudPunto unidad="grados">37.151140</latitudPunto>
+                <altitudPunto unidad="metros">90.3</altitudPunto>
+            </punto>
+            <distancia unidad="kilometros">74.8</distancia>
+        </puntoAnonimo>
+        <puntoAnonimo>
+            <punto>
+                <longitudPunto unidad="grados">-5.632251</longitudPunto>
+                <latitudPunto unidad="grados">37.140434</latitudPunto>
+                <altitudPunto unidad="metros">88.6</altitudPunto>
+            </punto>
+            <distancia unidad="kilometros">77.6</distancia>
+        </puntoAnonimo>
+        <puntoAnonimo>
+            <punto>
+                <longitudPunto unidad="grados">-5.647966</longitudPunto>
+                <latitudPunto unidad="grados">37.176843</latitudPunto>
+                <altitudPunto unidad="metros">79.0</altitudPunto>
+            </punto>
+            <distancia unidad="kilometros">82.3</distancia>
+        </puntoAnonimo>
+        <puntoAnonimo>
+            <punto>
+                <longitudPunto unidad="grados">-5.800153</longitudPunto>
+                <latitudPunto unidad="grados">37.304916</latitudPunto>
+                <altitudPunto unidad="metros">44.7</altitudPunto>
+            </punto>
+            <distancia unidad="kilometros">101.9</distancia>
+        </puntoAnonimo>
+        <puntoAnonimo>
+            <punto>
+                <longitudPunto unidad="grados">-5.815182</longitudPunto>
+                <latitudPunto unidad="grados">37.327947</latitudPunto>
+                <altitudPunto unidad="metros">59.1</altitudPunto>
+            </punto>
+            <distancia unidad="kilometros">104.9</distancia>
+        </puntoAnonimo>
+        <puntoAnonimo>
+            <nombrePunto>Alcalá de Guadaira</nombrePunto>
+            <punto>
+                <longitudPunto unidad="grados">-5.826000</longitudPunto>
+                <latitudPunto unidad="grados">37.346128</latitudPunto>
+                <altitudPunto unidad="metros">93.4</altitudPunto>
+            </punto>
+            <distancia unidad="kilometros">109.4</distancia>
+        </puntoAnonimo>
+        <puntoAnonimo>
+            <nombrePunto>Mairena del Alcor</nombrePunto>
+            <punto>
+                <longitudPunto unidad="grados">-5.748701</longitudPunto>
+                <latitudPunto unidad="grados">37.376244</latitudPunto>
+                <altitudPunto unidad="metros">134.1</altitudPunto>
+            </punto>
+            <distancia unidad="kilometros">117.2</distancia>
+        </puntoAnonimo>
+        <puntoAnonimo>
+            <nombrePunto>El Viso del Alcor</nombrePunto>
+            <punto>
+                <longitudPunto unidad="grados">-5.721751</longitudPunto>
+                <latitudPunto unidad="grados">37.388735</latitudPunto>
+                <altitudPunto unidad="metros">161.9</altitudPunto>
+            </punto>
+            <distancia unidad="kilometros">120.2</distancia>
+        </puntoAnonimo>
+        <puntoAnonimo>
+            <nombrePunto>Carmona</nombrePunto>
+            <punto>
+                <longitudPunto unidad="grados">-5.641643</longitudPunto>
+                <latitudPunto unidad="grados">37.471117</latitudPunto>
+                <altitudPunto unidad="metros">217.1</altitudPunto>
+            </punto>
+            <distancia unidad="kilometros">132.2</distancia>
+        </puntoAnonimo>
+        <puntoAnonimo>
+            <punto>
+                <longitudPunto unidad="grados">-5.707371</longitudPunto>
+                <latitudPunto unidad="grados">37.501348</latitudPunto>
+                <altitudPunto unidad="metros">95.7</altitudPunto>
+            </punto>
+            <distancia unidad="kilometros">139.3</distancia>
+        </puntoAnonimo>
+        <puntoAnonimo>
+            <punto>
+                <longitudPunto unidad="grados">-5.805845</longitudPunto>
+                <latitudPunto unidad="grados">37.507919</latitudPunto>
+                <altitudPunto unidad="metros">53.4</altitudPunto>
+            </punto>
+            <distancia unidad="kilometros">148.2</distancia>
+        </puntoAnonimo>
+        <puntoAnonimo>
+            <punto>
+                <longitudPunto unidad="grados">-5.840341</longitudPunto>
+                <latitudPunto unidad="grados">37.523807</latitudPunto>
+                <altitudPunto unidad="metros">33.2</altitudPunto>
+            </punto>
+            <distancia unidad="kilometros">151.9</distancia>
+        </puntoAnonimo>
+        <puntoAnonimo>
+            <punto>
+                <longitudPunto unidad="grados">-5.857646</longitudPunto>
+                <latitudPunto unidad="grados">37.539794</latitudPunto>
+                <altitudPunto unidad="metros">27.3</altitudPunto>
+            </punto>
+            <distancia unidad="kilometros">154.3</distancia>
+        </puntoAnonimo>
+        <puntoAnonimo>
+            <punto>
+                <longitudPunto unidad="grados">-5.922638</longitudPunto>
+                <latitudPunto unidad="grados">37.479494</latitudPunto>
+                <altitudPunto unidad="metros">16.0</altitudPunto>
+            </punto>
+            <distancia unidad="kilometros">163.3</distancia>
+        </puntoAnonimo>
+        <puntoAnonimo>
+            <nombrePunto>La Rinconada</nombrePunto>
+            <punto>
+                <longitudPunto unidad="grados">-5.977843</longitudPunto>
+                <latitudPunto unidad="grados">37.489323</latitudPunto>
+                <altitudPunto unidad="metros">10.7</altitudPunto>
+            </punto>
+            <distancia unidad="kilometros">168.5</distancia>
+        </puntoAnonimo>
+        <puntoAnonimo>
+            <punto>
+                <longitudPunto unidad="grados">-5.978899</longitudPunto>
+                <latitudPunto unidad="grados">37.478703</latitudPunto>
+                <altitudPunto unidad="metros">8.6</altitudPunto>
+            </punto>
+            <distancia unidad="kilometros">169.7</distancia>
+        </puntoAnonimo>
+        <puntoAnonimo>
+            <punto>
+                <longitudPunto unidad="grados">-5.971276</longitudPunto>
+                <latitudPunto unidad="grados">37.468861</latitudPunto>
+                <altitudPunto unidad="metros">7.7</altitudPunto>
+            </punto>
+            <distancia unidad="kilometros">171.0</distancia>
+        </puntoAnonimo>
+        <puntoAnonimo>
+            <punto>
+                <longitudPunto unidad="grados">-5.982768</longitudPunto>
+                <latitudPunto unidad="grados">37.422028</latitudPunto>
+                <altitudPunto unidad="metros">9.4</altitudPunto>
+            </punto>
+            <distancia unidad="kilometros">176.3</distancia>
+        </puntoAnonimo>
+        <puntoAnonimo>
+            <punto>
+                <longitudPunto unidad="grados">-6.011156</longitudPunto>
+                <latitudPunto unidad="grados">37.386259</latitudPunto>
+                <altitudPunto unidad="metros">9.8</altitudPunto>
+            </punto>
+            <distancia unidad="kilometros">181.4</distancia>
+        </puntoAnonimo>
+        <puntoAnonimo>
+            <punto>
+                <longitudPunto unidad="grados">-6.003919</longitudPunto>
+                <latitudPunto unidad="grados">37.373988</latitudPunto>
+                <altitudPunto unidad="metros">7.8</altitudPunto>
+            </punto>
+            <distancia unidad="kilometros">183.0</distancia>
+        </puntoAnonimo>
+        <puntoAnonimo>
+            <punto>
+                <longitudPunto unidad="grados">-5.991835</longitudPunto>
+                <latitudPunto unidad="grados">37.375476</latitudPunto>
+                <altitudPunto unidad="metros">6.1</altitudPunto>
+            </punto>
+            <distancia unidad="kilometros">184.1</distancia>
+        </puntoAnonimo>
+    </puntosAnonimos>
+
+    <clasificadosEtapa>
+        <primerClasificado>James Matthew Brennan</primerClasificado>
+        <segundoClasificado diferencia="0:00">Jordi Meeus</segundoClasificado>
+        <tercerClasificado diferencia="0:00">Magnus Cort Nielsen</tercerClasificado>
+    </clasificadosEtapa>
+
+    <clasificadosGeneral>
+        <primerClasificado>Enric Mas</primerClasificado>
+        <segundoClasificado diferencia="2:06">Félix Gall</segundoClasificado>
+        <tercerClasificado diferencia="2:10">Primoz Roglic</tercerClasificado>
+    </clasificadosGeneral>
+
+    <equipos>
+        <primerEquipo>Decathlon CMA CGM Team</primerEquipo>
+        <segundoEquipo diferencia="57:32">XDS Astana Team</segundoEquipo>
+        <tercerEquipo diferencia="1:11:15">Bahrain Victorious</tercerEquipo>
+    </equipos>
+</etapa>

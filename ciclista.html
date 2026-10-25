@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
+    <title>LaVuelta2026: Ciclista</title>
+
+    <meta name="author" content="Ana Calleja Ramón" />
+    <meta name="description" content="Documento ciclista.html del proyecto LaVuelta2026" />
+    
+    <meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
+
+    <!--Enlace a las hojas de estilo-->
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+    <link rel="icon" href="multimedia/favicon.ico"/>
+</head>
+
+<body>
+   <!-- contenido de ciclista.html  -->
+    <header>
+        <h1><a href="index.html">LaVuelta2026</a></h1>
+        <nav>
+            <a href="index.html" title="Volver a la página de inicio del proyecto">Inicio</a>
+            <a href="ciclista.html" title="Datos personales y trayectoria del ciclista" aria-current="page">Ciclista</a>
+            <a href="equipo.html" title="Información sobre el equipo ciclista">Equipo</a>
+            <a href="etapa.html" title="Recorrido y datos de la etapa">Etapa</a>
+            <a href="meteorologia.html" title="Previsión meteorológica de la etapa">Meteorología</a>
+            <a href="clasificaciones.html" title="Clasificaciones generales y por etapa">Clasificaciones</a>
+            <a href="juegos.html" title="Pon a prueba lo que sabes sobre la etapa">Juegos</a>
+            <a href="ayuda.html" title="Guía de uso del sitio LaVuelta2026">Ayuda</a>
+        </nav>
+    </header>
+
+    <nav aria-label="migas">
+        <ol>
+            <li><a href="index.html">Inicio</a></li>
+            <li>>></li>
+            <li>Ciclista</li>
+        </ol>
+    </nav>
+
+    <main>
+        <h2>Mikel Landa</h2>
+        <section>
+            <h3>Datos Personales</h3>
+            <ul>
+                <li>Mikel Landa Meana</li>
+                <li>13 de diciembre de 1989</li>
+                <li>España</li>
+                <li>Soudal Quick-Step</li>
+                <li>121</li>
+            </ul>
+            <picture>
+                <source srcset="multimedia/mikel-landa-movil.png" media="(max-width: 768px)" width="219" height="243"/>
+                <source srcset="multimedia/mikel-landa-tablet.png" media="(max-width: 1024px)" width="272" height="316"/>
+                <img src="multimedia/mikel-landa.png" alt="Mikel Landa, ciclista del Soudal Quick-Step" width="300" height="455"/>
+            </picture>
+        </section>
+
+        <section>
+            <h3>Datos equipos</h3>
+            <ol>
+                <li>Soudal Quick-Step (2024-presente)</li>
+                <li>Bahrain Victorious / Bahrain McLaren (2020-2023)</li>
+                <li>Movistar Team (2018-2019)</li>
+                <li>Team Sky (2016-2017)</li>
+                <li>Astana Pro Team (2014-2015)</li>
+                <li>Euskaltel-Euskadi (2011-2013)</li>
+                <li>Orbea (2009-2010)</li>
+            </ol>
+        </section>
+
+        <section>
+            <h3>Temporada 2025</h3>
+            <table>
+                <caption>Resultados de Mikel Landa en la temporada 2025</caption>
+                <tr>
+                    <th id="dato" scope="col">Nombre del Dato</th>
+                    <th id="resultado" scope="col">Resultado</th>
+                </tr>
+                <tr>
+                    <th id="victorias-etapa" scope="row">Victorias de etapa</th>
+                    <td headers="victorias-etapa resultado">0</td>
+                </tr>
+                <tr>
+                    <th id="victorias-general" scope="row">Victorias de clasificación general</th>
+                    <td headers="victorias-general resultado">0</td>
+                </tr>
+                <tr>
+                    <th id="maillots" scope="row">Maillots especiales</th>
+                    <td headers="maillots resultado">0</td>
+                </tr>
+                <tr>
+                    <th id="podios-etapa" scope="row">Podios en etapa</th>
+                    <td headers="podios-etapa resultado">1</td>
+                </tr>
+                <tr>
+                    <th id="abandonos" scope="row">Abandonos</th>
+                    <td headers="abandonos resultado">1</td>
+                </tr>
+                <tr>
+                    <th id="mejor-general" scope="row">Mejor puesto general</th>
+                    <td headers="mejor-general resultado">4.º</td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h3>Multimedia</h3>
+
+            <p>
+                Equipo <a href=" ">Soudal Quick-Step</a> en la Vuelta Ciclista a España 2026.
+            </p>
+
+            <video controls poster="multimedia/equipo-poster.jpg" width="480" height="270">
+                <source src="multimedia/equipo.mp4" type="video/mp4">
+                <source src="multimedia/equipo.webm" type="video/webm">
+            </video>
+
+            <audio controls>
+                <source src="multimedia/historia_equipo.mp3" type="audio/mpeg">
+                <source src="multimedia/historia_equipo.wav" type="audio/wav">
+            </audio>
+        </section>
+    </main>
+
+    <footer>
+        <p>Ana Calleja Ramón</p>
+        <address>
+            <a href="mailto:UO300568@uniovi.es">UO300568@uniovi.es</a>
+        </address>
+    </footer>
+</body>
+</html>
